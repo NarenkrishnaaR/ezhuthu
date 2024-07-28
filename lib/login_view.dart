@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ezhuthu/widgets/custom_text_field.dart';
-import 'package:ezhuthu/widgets/custom_button.dart';
+import 'package:ezhuthu/widgets/styled_text_field.dart';
+import 'package:ezhuthu/widgets/styled_button.dart';
 
 class LoginView extends StatefulWidget {
 const LoginView({super.key});
@@ -25,12 +25,12 @@ return Scaffold(
         const SizedBox(height: 24),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32), 
-        child: CustomTextField(hintText: "E-mail", controller: emailController),
+        child: StyledTextField(hintText: "E-mail", controller: emailController),
         ),
         const SizedBox(height: 16),
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32), 
-        child: CustomTextField(hintText: "Password", controller: passwordController, obscureText: true)
+        child: StyledTextField(hintText: "Password", controller: passwordController, obscureText: true)
         ),
         const SizedBox(height: 24),
           Padding(
@@ -38,7 +38,7 @@ return Scaffold(
         child: SizedBox(
           height: 50, 
           width: double.infinity,
-        child: CustomButton(
+        child: StyledButton(
           title: "Login", 
           onPressed: () {
         })

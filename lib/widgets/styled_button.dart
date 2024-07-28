@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
+class StyledButton extends StatelessWidget {
 final String title;
 final VoidCallback onPressed;
 
-const CustomButton({
+const StyledButton({
 super.key,
 required this.title,
 required this.onPressed
