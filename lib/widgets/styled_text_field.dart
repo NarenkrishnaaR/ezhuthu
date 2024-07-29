@@ -1,3 +1,4 @@
+import 'package:ezhuthu/widgets/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class StyledTextField extends StatelessWidget {
@@ -24,11 +25,11 @@ return TextFormField(
   obscureText: obscureText, 
   decoration: InputDecoration(
     hintText: hintText, 
-    fillColor: const Color(0xffF0F0F0),
+    fillColor: AppColors.gray,
     filled: true,
     border: OutlineInputBorder(
       borderSide: const BorderSide(
-        color:  Color(0xff4B3B2E), 
+        color: AppColors.primary, 
         width: 1.0) ,
       borderRadius: BorderRadius.circular(8.0))));
 }

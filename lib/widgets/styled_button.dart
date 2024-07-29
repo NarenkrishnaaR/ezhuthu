@@ -1,3 +1,4 @@
+import 'package:ezhuthu/widgets/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class StyledButton extends StatelessWidget {
@@ -18,8 +19,8 @@ onPressed: onPressed,
 style: ElevatedButton.styleFrom(
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(12.0)),
-  backgroundColor: const Color(0xff4B3B2E),
-  foregroundColor: Colors.white
+  backgroundColor: AppColors.primary,
+  foregroundColor: AppColors.background
 ), 
 child: Text(
   title,
