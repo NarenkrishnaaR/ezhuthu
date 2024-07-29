@@ -1,16 +1,21 @@
-# ezhuthu
+# Ezhuthu
 
-A new Flutter project.
+**Ezhuthu** is a versatile literary app designed for writers and readers. It offers features to publish, browse, and engage with a variety of literary content including articles, poetry, and stories. The app supports multiple languages and provides options for premium content.
 
-## Getting Started
+## Current Status
 
-This project is a starting point for a Flutter application.
+The app is currently in development.
 
-A few resources to get you started if this is your first Flutter project:
+## Features (Planned)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **User Authentication**:
+  - Login and registration functionality.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Content Publishing**:
+  - Authors can publish articles, poetry, and stories.
+
+- **Content Browsing**:
+  - Browse through literary works by genre, author, and language.
+
+- **Premium Content**:
+  - Access exclusive content with a premium subscription.
