@@ -1,4 +1,5 @@
 import 'package:ezhuthu/widgets/app_colors.dart';
+import 'package:ezhuthu/widgets/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:ezhuthu/widgets/styled_text_field.dart';
 import 'package:ezhuthu/widgets/styled_button.dart';
@@ -19,20 +20,20 @@ backgroundColor: Colors.white,
 body: Column(
 crossAxisAlignment: CrossAxisAlignment.center,
 children: [
-const SizedBox(height: 16),
+const SizedBox(height: Spacing.medium),
 Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32),
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge),
 child: Align(alignment: Alignment.center,child: Image.asset('assets/images/logo.png'))
 ),
-const SizedBox(height: 24),
+const SizedBox(height: Spacing.large),
 configureLoginTextfields(),
-const SizedBox(height: 24),
+const SizedBox(height: Spacing.large),
 configureLoginButton(),
-const SizedBox(height: 24),
+const SizedBox(height: Spacing.large),
 configureStaticText(),
-const SizedBox(height: 12),
+const SizedBox(height: Spacing.small),
 configureSocialMediaButtons(),
-const SizedBox(height: 12),
+const SizedBox(height: Spacing.small),
 configureRegisterAccountRow()
 ]) 
 );
@@ -42,12 +43,12 @@ Widget configureLoginTextfields() {
 return Column(
 children: [
 Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32), 
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge), 
 child: StyledTextField(hintText: "E-mail", controller: emailController),
 ),
-const SizedBox(height: 16),
+const SizedBox(height: Spacing.medium),
   Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32), 
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge), 
 child: StyledTextField(hintText: "Password", controller: passwordController, obscureText: true)
 ) 
 ]
@@ -56,7 +57,7 @@ child: StyledTextField(hintText: "Password", controller: passwordController, obs
 
 Widget configureLoginButton() {
 return Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32), 
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge), 
 child: SizedBox(
   height: 50, 
   width: double.infinity,
@@ -71,14 +72,14 @@ child: StyledButton(
 
 Widget configureStaticText() {
 return const Padding(
-  padding: EdgeInsets.symmetric(horizontal: 32),
+  padding: EdgeInsets.symmetric(horizontal: Spacing.extraLarge),
   child: Row(
     children: [
         Expanded(
         child: Divider(color: AppColors.primary),
       ),
         Padding(
-        padding: EdgeInsets.symmetric(horizontal: 8),
+        padding: EdgeInsets.symmetric(horizontal: Spacing.extraSmall),
         child: Text('Or Login with'),
       ),
         Expanded(
@@ -91,7 +92,7 @@ return const Padding(
 
 Widget configureSocialMediaButtons() {
 return Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32),
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge),
   child: Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -126,7 +127,7 @@ return Padding(
 
 Widget configureRegisterAccountRow() {
 return Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 32), 
+  padding: const EdgeInsets.symmetric(horizontal: Spacing.extraLarge), 
   child: Center(
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
