@@ -3,6 +3,7 @@ import 'package:ezhuthu/widgets/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:ezhuthu/widgets/styled_text_field.dart';
 import 'package:ezhuthu/widgets/styled_button.dart';
+import 'package:ezhuthu/register_view.dart';
 
 class LoginView extends StatefulWidget {
 const LoginView({super.key});
@@ -135,7 +136,7 @@ return Padding(
       const Text("Don't have an account?"),
       TextButton(
         onPressed: () {
-          
+          navigateToRegisterView(context);
         },
         style: TextButton.styleFrom(
           foregroundColor: AppColors.secondary, 
@@ -147,4 +148,9 @@ return Padding(
   )
 );
 }
+void navigateToRegisterView(BuildContext context) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const RegisterView()));
+ }
 }
